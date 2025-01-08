@@ -1,0 +1,70 @@
+<div class="container mt-3">
+    <div class="shadow p-3 rounded">
+
+        <div class="h5">Set A</div>
+
+        <ol>
+            <li>
+                <p>
+                    <strong>How to create reactive forms? <br> Answer:</strong>
+                    To create reactive forms in Angular, you need to import the ReactiveFormsModule in your module, then define a FormGroup in your component class, and bind it to your template using the formGroup directive.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <strong>How to add built-in validation for email in reactive form? <br> Answer:</strong>
+                    You can add built-in email validation by using the Validators.email function when defining your form control, like this: <br> this.form = new FormGroup(&#123; email: new FormControl('', [Validators.email]) &#125;);.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <strong>How to add built-in validation for required fields in reactive form? <br> Answer:</strong>
+                    To add required field validation, use the Validators.required function when creating your form control, for example: <br> this.form = new FormGroup(&#123; name: new FormControl('', [Validators.required]) &#125;);.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <strong>How to add regex validation for reactive forms? <br>
+                    Answer:</strong>
+                    You can add regex validation by using the Validators.pattern function, like this: <br> this.form = new FormGroup(&#123; username: new FormControl('', [Validators.pattern(/^[a-zA-Z0-9]+$/)]) &#125;);.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <strong>How to generate routing?<br>Answer:</strong>
+                    To generate routing in Angular, you can use the Angular CLI command ng generate module app-routing --flat --module=app, which creates a routing module and configures it in your main app module.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <strong>How to configure routes with parameters?<br>Answer:</strong>
+                    You can configure routes with parameters by defining them in your routing module like this: &#123; path: 'user/:id', component: UserComponent &#125;, where :id is a route parameter that can be accessed in the component.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <strong>What is DebounceTime in RxJS?<br>Answer:</strong>
+                    debounceTime is an RxJS operator that delays the emission of values from an observable for a specified duration, effectively filtering out rapid emissions and only allowing the last value to pass through after the specified time has elapsed.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <strong>What is pipe operator?<br>Answer:</strong>
+                    The pipe operator in RxJS is a method that allows you to compose multiple operators together in a clean and readable way, enabling you to transform, filter, or manipulate the data emitted by an observable.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <strong>What is distinctUntilChanged operator?<br>Answer:</strong>
+                    The distinctUntilChanged operator in RxJS emits only the first value from the source observable and subsequent values only if they are different from the last emitted value, effectively filtering out consecutive duplicates.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <strong>What is filter operator in RxJS?<br>Answer:</strong>
+                    The filter operator in RxJS allows you to selectively emit values from an observable based on a provided predicate function, which determines whether each emitted value should be included. This operator is useful for creating more focused streams by excluding unwanted values.
+                </p>
+            </li>
+        </ol>
+    </div>
+</div>
